@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
-import { HeaderComponent } from './presentation/components/header/header.component';
-import { HomeComponent } from './presentation/pages/home/home.component';
+
+import {RouterOutlet} from '@angular/router';
+import {Layout} from './shared/presentation/components/layout/layout';
 
 @Component({
   selector: 'app-root', // Debe coincidir con index.html
   standalone: true,
-  imports: [HeaderComponent, HomeComponent],
+  imports: [RouterOutlet, Layout],
   templateUrl: './app.html',
   styleUrls: ['./app.css']
 })
