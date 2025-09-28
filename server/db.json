@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "admin123"
+    },
+    {
+      "id": 2,
+      "username": "user1",
+      "password": "password123"
+    },
+    {
+      "id": 3,
+      "username": "demo",
+      "password": "demo123"
+    },
+    {
+      "id": 1759089144097,
+      "username": "user",
+      "password": "user123"
+    }
+  ],
+  "authentication": {
+    "sign-in": [],
+    "sign-up": []
+  }
+}
