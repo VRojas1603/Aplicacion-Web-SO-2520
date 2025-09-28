@@ -1,17 +1,18 @@
-<section class="banner">
-  <nav class="navbar">
+<mat-toolbar color="primary" class="banner">
+  <button mat-icon-button class="banner-icon" aria-label="Menu icon button">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span>
     <img src="../../../../../assets/logo.png" alt="Logo OLVA" class="logo-img">
+  </span>
+  <span class="spacer1"></span>
+  <span class="nav-links">
+    <a mat-button class="nav-button active">Inicio</a>
+    <a mat-button class="nav-button">Servicios</a>
+    <a mat-button class="nav-button">Contacto</a>
+    <a mat-button class="nav-button">Nosotros</a>
 
-    <button class="menu-toggle" aria-label="Abrir menú">
-      ☰
-    </button>
+  </span>
 
-    <ul class="nav-links">
-      <li><a href="#" class="nav-button active">Inicio</a></li>
-      <li><a href="#" class="nav-button">Servicios</a></li>
-      <li><a href="#" class="nav-button">Contacto</a></li>
-      <li><a href="#" class="nav-button">Nosotros</a></li>
-    </ul>
-  </nav>
 
-</section>
+</mat-toolbar>
