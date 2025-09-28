@@ -1,0 +1,8 @@
+<!-- Authentication Section information content depends on signed-in status -->
+@if (isSignedIn) {
+  <!-- Authenticated Scenario Information and Available Actions -->
+  <span class="mat-body"> Welcome, {{ currentUserName }}</span> | <button mat-button (click)="onSignOut()">Sign Out</button>
+} @else {
+  <!-- Anonymous Scenario Available Actions -->
+  <button mat-button (click)="onSignIn()">Sign In</button> | <button mat-button (click)="onSignUp()">Sign Up</button>
+}
