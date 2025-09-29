@@ -1,0 +1,12 @@
+.table-container{
+  max-width: 900px;
+  margin: 0 auto;
+}
+h2{
+  font-size: 28px;
+  margin-bottom: 40px;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+}

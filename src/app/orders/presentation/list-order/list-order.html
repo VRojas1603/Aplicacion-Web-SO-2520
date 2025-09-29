@@ -1,0 +1,51 @@
+<h2>Lista de Ordenes Pendientes</h2>
+
+<div class="table-container">
+  <table mat-table [dataSource]="orders()" class="mat-elevation-z2">
+
+    <ng-container matColumnDef="id">
+      <th mat-header-cell *matHeaderCellDef> ID </th>
+      <td mat-cell *matCellDef="let order"> {{order.id}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="description">
+      <th mat-header-cell *matHeaderCellDef> Descripción </th>
+      <td mat-cell *matCellDef="let order"> {{ order.description }} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="status">
+      <th mat-header-cell *matHeaderCellDef> Estatus </th>
+      <td mat-cell *matCellDef="let order"> {{ order.status }} </td>
+    </ng-container>
+
+
+    <ng-container matColumnDef="customer">
+      <th mat-header-cell *matHeaderCellDef> Cliente </th>
+      <td mat-cell *matCellDef="let order"> {{order.id_customer}} </td>
+    </ng-container>
+
+
+    <ng-container matColumnDef="branch">
+      <th mat-header-cell *matHeaderCellDef> Sucursal de Envio </th>
+      <td mat-cell *matCellDef="let order"> {{order.id_branch}} </td>
+    </ng-container>
+
+
+    <ng-container matColumnDef="actions">
+      <th mat-header-cell *matHeaderCellDef> Acciones </th>
+      <td mat-cell *matCellDef="let order">
+        <button mat-raised-button color="accent" > Editar</button>
+        <button mat-raised-button color="warn" > Eliminar</button>
+      </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="columns"></tr>
+    <tr mat-row *matRowDef="let row; columns: columns;"></tr>
+  </table>
+
+
+  <div style="margin-top: 16px;">
+    <button mat-raised-button color="primary" > Agregar Orden</button>
+  </div>
+</div>
+
