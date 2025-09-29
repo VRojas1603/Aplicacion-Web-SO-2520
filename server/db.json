@@ -24,5 +24,114 @@
   "authentication": {
     "sign-in": [],
     "sign-up": []
-  }
+  },
+  "customers": [
+    {"id":"C001","name":"Juan","last_name":"Pérez","phone":987654321,"email":"juan.perez@mail.com"},
+    {"id":"C002","name":"María","last_name":"García","phone":923456789,"email":"maria.garcia@mail.com"},
+    {"id":"C003","name":"Luis","last_name":"Ramírez","phone":956123478,"email":"luis.ramirez@mail.com"},
+    {"id":"C004","name":"Ana","last_name":"Torres","phone":912345678,"email":"ana.torres@mail.com"},
+    {"id":"C005","name":"Carlos","last_name":"Fernández","phone":934567812,"email":"carlos.fernandez@mail.com"},
+    {"id":"C006","name":"Sofía","last_name":"Lopez","phone":976543210,"email":"sofia.lopez@mail.com"},
+    {"id":"C007","name":"Pedro","last_name":"Jiménez","phone":911223344,"email":"pedro.jimenez@mail.com"},
+    {"id":"C008","name":"Lucía","last_name":"Martínez","phone":922334455,"email":"lucia.martinez@mail.com"},
+    {"id":"C009","name":"Diego","last_name":"Castro","phone":933445566,"email":"diego.castro@mail.com"},
+    {"id":"C010","name":"Valeria","last_name":"Morales","phone":944556677,"email":"valeria.morales@mail.com"}
+  ],
+  "dealers": [
+    {"id":"D001","name":"José","last_name":"Santos","licence":"LIC123","phone":987111222,"vehicle_type":"Camioneta"},
+    {"id":"D002","name":"Ricardo","last_name":"Vargas","licence":"LIC124","phone":987333444,"vehicle_type":"Camión"},
+    {"id":"D003","name":"Miguel","last_name":"Paredes","licence":"LIC125","phone":987555666,"vehicle_type":"Furgoneta"},
+    {"id":"D004","name":"Julio","last_name":"Mendoza","licence":"LIC126","phone":987777888,"vehicle_type":"Motocicleta"},
+    {"id":"D005","name":"Oscar","last_name":"Silva","licence":"LIC127","phone":987999000,"vehicle_type":"Camión"},
+    {"id":"D006","name":"Raúl","last_name":"Torres","licence":"LIC128","phone":976111222,"vehicle_type":"Furgoneta"},
+    {"id":"D007","name":"Hugo","last_name":"Salazar","licence":"LIC129","phone":976333444,"vehicle_type":"Camioneta"},
+    {"id":"D008","name":"David","last_name":"Cruz","licence":"LIC130","phone":976555666,"vehicle_type":"Camión"},
+    {"id":"D009","name":"Enrique","last_name":"Reyes","licence":"LIC131","phone":976777888,"vehicle_type":"Motocicleta"},
+    {"id":"D010","name":"Felipe","last_name":"Romero","licence":"LIC132","phone":976999000,"vehicle_type":"Furgoneta"}
+  ],
+  "branches": [
+    {"id":"B001","name":"Sucursal Lima","address":"Av. Siempre Viva 123","city":"Lima","work_time_start":"2025-09-26 08:00:00","work_time_end":"2025-09-26 18:00:00"},
+    {"id":"B002","name":"Sucursal Arequipa","address":"Calle Real 456","city":"Arequipa","work_time_start":"2025-09-26 08:30:00","work_time_end":"2025-09-26 18:30:00"},
+    {"id":"B003","name":"Sucursal Cusco","address":"Jr. Comercio 789","city":"Cusco","work_time_start":"2025-09-26 09:00:00","work_time_end":"2025-09-26 19:00:00"},
+    {"id":"B004","name":"Sucursal Piura","address":"Av. Grau 234","city":"Piura","work_time_start":"2025-09-26 08:00:00","work_time_end":"2025-09-26 18:00:00"},
+    {"id":"B005","name":"Sucursal Trujillo","address":"Calle Pizarro 345","city":"Trujillo","work_time_start":"2025-09-26 08:30:00","work_time_end":"2025-09-26 18:30:00"},
+    {"id":"B006","name":"Sucursal Chiclayo","address":"Av. Salaverry 678","city":"Chiclayo","work_time_start":"2025-09-26 09:00:00","work_time_end":"2025-09-26 19:00:00"},
+    {"id":"B007","name":"Sucursal Tacna","address":"Calle Bolívar 111","city":"Tacna","work_time_start":"2025-09-26 08:00:00","work_time_end":"2025-09-26 18:00:00"},
+    {"id":"B008","name":"Sucursal Ica","address":"Av. San Martín 222","city":"Ica","work_time_start":"2025-09-26 08:30:00","work_time_end":"2025-09-26 18:30:00"},
+    {"id":"B009","name":"Sucursal Huancayo","address":"Jr. Huancavelica 333","city":"Huancayo","work_time_start":"2025-09-26 09:00:00","work_time_end":"2025-09-26 19:00:00"},
+    {"id":"B010","name":"Sucursal Puno","address":"Av. Titicaca 444","city":"Puno","work_time_start":"2025-09-26 08:00:00","work_time_end":"2025-09-26 18:00:00"}
+  ],
+  "orders": [
+    {"id":"O001","description":"Electrodomésticos","weight":15.5,"height":1.2,"status":"Pendiente","id_customer":"C001","id_dealer":"D001","id_branch":"B001"},
+    {"id":"O002","description":"Ropa","weight":5.0,"height":0.8,"status":"Enviado","id_customer":"C002","id_dealer":"D002","id_branch":"B002"},
+    {"id":"O003","description":"Muebles","weight":45.3,"height":2.0,"status":"Entregado","id_customer":"C003","id_dealer":"D003","id_branch":"B003"},
+    {"id":"O004","description":"Juguetes","weight":10.0,"height":1.0,"status":"Pendiente","id_customer":"C004","id_dealer":"D004","id_branch":"B004"},
+    {"id":"O005","description":"Libros","weight":7.5,"height":0.9,"status":"Enviado","id_customer":"C005","id_dealer":"D005","id_branch":"B005"},
+    {"id":"O006","description":"Herramientas","weight":20.0,"height":1.5,"status":"Pendiente","id_customer":"C006","id_dealer":"D006","id_branch":"B006"},
+    {"id":"O007","description":"Instrumentos","weight":30.0,"height":1.8,"status":"Enviado","id_customer":"C007","id_dealer":"D007","id_branch":"B007"},
+    {"id":"O008","description":"Decoración","weight":12.0,"height":1.0,"status":"Entregado","id_customer":"C008","id_dealer":"D008","id_branch":"B008"},
+    {"id":"O009","description":"Zapatos","weight":8.0,"height":0.7,"status":"Pendiente","id_customer":"C009","id_dealer":"D009","id_branch":"B009"},
+    {"id":"O010","description":"Tecnología","weight":25.0,"height":1.3,"status":"Enviado","id_customer":"C010","id_dealer":"D010","id_branch":"B010"}
+  ],
+  "vehicles": [
+    {"id":"V001","vehicle_plate":"ABC-123","vehicle_type":"Camioneta","weight_capacity":2000,"id_dealer":"D001"},
+    {"id":"V002","vehicle_plate":"DEF-456","vehicle_type":"Camión","weight_capacity":5000,"id_dealer":"D002"},
+    {"id":"V003","vehicle_plate":"GHI-789","vehicle_type":"Furgoneta","weight_capacity":3000,"id_dealer":"D003"},
+    {"id":"V004","vehicle_plate":"JKL-012","vehicle_type":"Motocicleta","weight_capacity":500,"id_dealer":"D004"},
+    {"id":"V005","vehicle_plate":"MNO-345","vehicle_type":"Camión","weight_capacity":6000,"id_dealer":"D005"},
+    {"id":"V006","vehicle_plate":"PQR-678","vehicle_type":"Furgoneta","weight_capacity":2500,"id_dealer":"D006"},
+    {"id":"V007","vehicle_plate":"STU-901","vehicle_type":"Camioneta","weight_capacity":2200,"id_dealer":"D007"},
+    {"id":"V008","vehicle_plate":"VWX-234","vehicle_type":"Camión","weight_capacity":5500,"id_dealer":"D008"},
+    {"id":"V009","vehicle_plate":"YZA-567","vehicle_type":"Motocicleta","weight_capacity":600,"id_dealer":"D009"},
+    {"id":"V010","vehicle_plate":"BCD-890","vehicle_type":"Furgoneta","weight_capacity":2800,"id_dealer":"D010"}
+  ],
+  "payments": [
+    {"id":"P001","amount":150.00,"payment_method":"Tarjeta","payment_date":"2025-09-20","payment_status":"Completado","id_order":"O001"},
+    {"id":"P002","amount":80.00,"payment_method":"Efectivo","payment_date":"2025-09-21","payment_status":"Completado","id_order":"O002"},
+    {"id":"P003","amount":500.00,"payment_method":"Transferencia","payment_date":"2025-09-22","payment_status":"Pendiente","id_order":"O003"},
+    {"id":"P004","amount":60.00,"payment_method":"Tarjeta","payment_date":"2025-09-23","payment_status":"Completado","id_order":"O004"},
+    {"id":"P005","amount":45.00,"payment_method":"Efectivo","payment_date":"2025-09-24","payment_status":"Completado","id_order":"O005"},
+    {"id":"P006","amount":200.00,"payment_method":"Tarjeta","payment_date":"2025-09-24","payment_status":"Pendiente","id_order":"O006"},
+    {"id":"P007","amount":350.00,"payment_method":"Transferencia","payment_date":"2025-09-25","payment_status":"Completado","id_order":"O007"},
+    {"id":"P008","amount":90.00,"payment_method":"Efectivo","payment_date":"2025-09-25","payment_status":"Completado","id_order":"O008"},
+    {"id":"P009","amount":120.00,"payment_method":"Tarjeta","payment_date":"2025-09-26","payment_status":"Pendiente","id_order":"O009"},
+    {"id":"P010","amount":400.00,"payment_method":"Transferencia","payment_date":"2025-09-26","payment_status":"Completado","id_order":"O010"}
+  ],
+  "shipments": [
+    {"id":"S001","date_request":"2025-09-20","service_type":"Express","cost":50.00,"status":"En camino","id_order":"O001"},
+    {"id":"S002","date_request":"2025-09-21","service_type":"Estandar","cost":20.00,"status":"Entregado","id_order":"O002"},
+    {"id":"S003","date_request":"2025-09-22","service_type":"Express","cost":70.00,"status":"Pendiente","id_order":"O003"},
+    {"id":"S004","date_request":"2025-09-23","service_type":"Estandar","cost":25.00,"status":"En camino","id_order":"O004"},
+    {"id":"S005","date_request":"2025-09-24","service_type":"Express","cost":60.00,"status":"Entregado","id_order":"O005"},
+    {"id":"S006","date_request":"2025-09-24","service_type":"Estandar","cost":30.00,"status":"Pendiente","id_order":"O006"},
+    {"id":"S007","date_request":"2025-09-25","service_type":"Express","cost":80.00,"status":"En camino","id_order":"O007"},
+    {"id":"S008","date_request":"2025-09-25","service_type":"Estandar","cost":22.00,"status":"Entregado","id_order":"O008"},
+    {"id":"S009","date_request":"2025-09-26","service_type":"Express","cost":55.00,"status":"Pendiente","id_order":"O009"},
+    {"id":"S010","date_request":"2025-09-26","service_type":"Estandar","cost":40.00,"status":"En camino","id_order":"O010"}
+  ],
+  "tracking": [
+    {"id":"T001","date_time":"2025-09-20 10:00:00","start_place":"Lima","end_place":"Callao","status_tracking":"En tránsito","id_order":"O001"},
+    {"id":"T002","date_time":"2025-09-21 14:00:00","start_place":"Arequipa","end_place":"Moquegua","status_tracking":"Entregado","id_order":"O002"},
+    {"id":"T003","date_time":"2025-09-22 09:00:00","start_place":"Cusco","end_place":"Apurímac","status_tracking":"Pendiente","id_order":"O003"},
+    {"id":"T004","date_time":"2025-09-23 11:00:00","start_place":"Piura","end_place":"Tumbes","status_tracking":"En tránsito","id_order":"O004"},
+    {"id":"T005","date_time":"2025-09-24 12:00:00","start_place":"Trujillo","end_place":"Chiclayo","status_tracking":"Entregado","id_order":"O005"},
+    {"id":"T006","date_time":"2025-09-24 15:00:00","start_place":"Chiclayo","end_place":"Lambayeque","status_tracking":"Pendiente","id_order":"O006"},
+    {"id":"T007","date_time":"2025-09-25 16:00:00","start_place":"Tacna","end_place":"Arequipa","status_tracking":"En tránsito","id_order":"O007"},
+    {"id":"T008","date_time":"2025-09-25 13:00:00","start_place":"Ica","end_place":"Lima","status_tracking":"Entregado","id_order":"O008"},
+    {"id":"T009","date_time":"2025-09-26 09:30:00","start_place":"Huancayo","end_place":"Ayacucho","status_tracking":"Pendiente","id_order":"O009"},
+    {"id":"T010","date_time":"2025-09-26 17:00:00","start_place":"Puno","end_place":"Cusco","status_tracking":"En tránsito","id_order":"O010"}
+  ],
+  "notifications": [
+    {"id":"N001","message":"Su pedido fue recibido","date_time":"2025-09-20 08:00:00","type":"Info","id_customer":"C001"},
+    {"id":"N002","message":"Su pago fue confirmado","date_time":"2025-09-21 09:00:00","type":"Pago","id_customer":"C002"},
+    {"id":"N003","message":"Su pedido está en camino","date_time":"2025-09-22 10:00:00","type":"Envio","id_customer":"C003"},
+    {"id":"N004","message":"Su pedido fue entregado","date_time":"2025-09-23 11:00:00","type":"Info","id_customer":"C004"},
+    {"id":"N005","message":"Su factura está disponible","date_time":"2025-09-24 12:00:00","type":"Pago","id_customer":"C005"},
+    {"id":"N006","message":"Su pedido fue retrasado","date_time":"2025-09-24 13:00:00","type":"Alerta","id_customer":"C006"},
+    {"id":"N007","message":"Su pedido está listo para recojo","date_time":"2025-09-25 14:00:00","type":"Recojo","id_customer":"C007"},
+    {"id":"N008","message":"Gracias por su compra","date_time":"2025-09-25 15:00:00","type":"Info","id_customer":"C008"},
+    {"id":"N009","message":"Su pedido fue despachado","date_time":"2025-09-26 16:00:00","type":"Envio","id_customer":"C009"},
+    {"id":"N010","message":"Promoción especial disponible","date_time":"2025-09-26 17:00:00","type":"Promo","id_customer":"C010"}
+  ]
+
 }
